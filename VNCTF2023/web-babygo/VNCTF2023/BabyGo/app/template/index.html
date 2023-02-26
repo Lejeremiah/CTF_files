@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BabyGo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html {
+            height: 100%;
+        }
+        body {
+            height: 100%;
+        }
+        .container {
+            height: 100%;
+            background-image: linear-gradient(to right, #fbc2eb, #a6c1ee);
+        }
+        .wrapper {
+            background-color: #fff;
+            width: 600px;
+            height: 280px;
+            border-radius: 20px;
+            padding: 0 80px;
+            position: relative;
+            left: 50%;
+            top: 45%;
+            transform: translate(-50%, -50%);
+        }
+        .header {
+            font-family: Monaco;
+            font-size: 38px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 200px;
+        }
+        .msg {
+            font-family: Monaco;
+            font-size: 17px;
+            text-align: center;
+            line-height: 30px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="wrapper">
+        <div class="header">Welcome To jerem1ahCTF 2023</div>
+        <div class="msg">
+            {{.message}}
+        </div>
+    </div>
+</div>
+</body>
+</html>
